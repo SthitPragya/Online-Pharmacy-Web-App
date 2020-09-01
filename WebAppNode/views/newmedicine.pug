@@ -1,0 +1,21 @@
+html
+    head
+        style
+            include newmedicine.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, #{name}
+        div(id="inp")
+            form(action='/newmedicine', method="POST")
+                br
+                label(for="lname") Medicine Name
+                br
+                input(type="text" id="lname" name="medicinename" placeholder="Medicine Name")
+                br
+                label(for="lname") Authentication
+                br
+                input(type="text" id="lname" name="auth" placeholder="Y or N")
+                br
+                br
+                input(type="submit" id="logbtn" value="Add Medicine")

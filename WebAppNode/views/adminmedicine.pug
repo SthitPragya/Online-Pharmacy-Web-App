@@ -1,0 +1,27 @@
+html
+    head
+        style
+            include adminmedicine.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, Admin
+        div(id="main")
+            h1 Medicines
+            table
+                tr
+                    th Medicine ID
+                    th Medicine Name
+                    th Authentication Required
+                    th
+                - for(i=1;i<=cid.length;i++)
+                    tr
+                        td #{cid[i-1]}
+                        td #{cname[i-1]}
+                        td #{au[i-1]}
+                        td
+                            a(href=`/delmedicine/${cid[i-1]}`) Remove Medicine
+        div(id="bottom")
+            a(href='/logout' class="btmbtns") Log Out
+            a(href='/adminspage' class="btmbtns") Go Back
+            a(href='/newmedicine' class="btmbtns") Add Medicine

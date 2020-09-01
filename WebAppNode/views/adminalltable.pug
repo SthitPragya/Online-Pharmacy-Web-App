@@ -1,0 +1,29 @@
+html
+    head
+        style
+            include adminalltable.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, #{name}
+        div(id="main")
+            h1 Faculty Accounts
+            table
+                tr
+                    th S. No.
+                    th Faculty ID
+                    th Faculty Name
+                    th Subjects
+                    th
+                - for(i=1;i<=fname.length;i++)
+                    tr
+                        td #{i}
+                        td #{fid[i-1]}
+                        td #{fname[i-1]}
+                        td #{cname[i-1]}
+                        td
+                            a(href=`/delteacher/${fid[i-1]}`) Delete Account
+        div(id="bottom")
+            a(href='/logout' class="btmbtns") Log Out
+            a(href='/adminspage' class="btmbtns") Go Back
+            a(href='/newteacher' class="btmbtns") Add Faculty

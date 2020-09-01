@@ -1,0 +1,16 @@
+html
+    head
+        style
+            include newmedicine.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, #{name}
+        div(id="inp")
+            form(enctype="multipart/form-data", action='/photocheck', method="POST")
+                br
+                label(for="lname") Upload Photo
+                br
+                input(type="file" name="photo" accept="image/*" capture="user")
+                br
+                input(type="submit" id="logbtn" value="Add Photo")

@@ -1,0 +1,52 @@
+body{
+    background-color: wheat;
+}
+
+#top{
+    text-align:center;
+    font-size:4vw;
+    background-color: rgb(85, 165, 240);
+    padding: 4vw;
+}
+
+#login{
+    background-color: white;
+    text-align: center;
+    /*border: solid black 2px;
+    */height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    padding: 1vw;
+    padding-bottom: 7vw;
+    border-radius: 2vw;
+}
+
+#inp{
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15vw;
+    /*border: solid 1px black;*/
+}
+
+form{
+    text-align: left;
+    font-size: 2vw;
+}
+
+input{
+    width: 100%;
+    height: 2vw;
+}
+
+#logbtn{
+    font-size: 2vw;
+    height: auto;
+    background-color: aqua;
+    border-radius: 2vw;
+}
+
+a:link{
+    text-decoration: none;
+}

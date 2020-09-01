@@ -1,0 +1,16 @@
+html
+    head
+        style
+            include adminspage.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, #{name}
+        div(id="login")
+            a(class="head" href="/adminalltable") Get all table
+            p(style="height:4vw;")
+            a(class="head" href="/adminmedicine") Get Medicine
+            p(style="height:4vw;")
+            a(class="head" href="/adminuser") Get User
+        br
+        a(style='font-size:2vw; margin-left:42%' href='/logout' class="head") Log Out

@@ -1,0 +1,28 @@
+html
+    head
+        style
+            include page.css
+    body
+        h1(id="top") Welcome to Online Pharmacy
+        div(id="line")
+            p Hello, #{fname}
+            p #{message}
+        div(id="main")
+            h1 Your Prescriptions
+            table
+                tr
+                    th Prescription ID
+                    th Medicines
+                    th
+                    th
+                - for(i=1;i<=cid.length;i++)
+                    tr
+                        td #{cid[i-1]}
+                        td #{coursename[i-1]}
+                        td
+                            a(href=`/order/${cid[i-1]}/`) Order
+                        td
+                            a(href=`/removeprescription/${cid[i-1]}/`) Remove
+        div(id="bottom")
+            a(href='/logout' class="btmbtns") Log Out
+            a(href='/addprescription' class="btmbtns") Add Prescription

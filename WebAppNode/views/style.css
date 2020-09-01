@@ -1,0 +1,32 @@
+#top{
+    text-align:center;
+    font-size:4vw;
+    background-color: rgb(85, 165, 240);
+    padding: 4vw;
+}
+
+#login{
+    text-align: center;
+    /*border: solid black 2px;
+    */height: auto;
+    padding: 3vw;
+}
+
+.head{
+    color: white;
+    background-color: aqua;
+    margin-top: 7vw;
+    text-align: center;
+    padding: 0.9vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 3vw;
+    border: solid black 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3vw;
+}
+
+a:link{
+    text-decoration: none;
+}
